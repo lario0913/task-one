@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
+import FirstSection from "./Components/FirstSection";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -14,59 +15,29 @@ function Tabs() {
         <div className="container">
             <h1 className="heading">Complete your Purchase</h1>
             <div className="block-tabs">
-            <div
-            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            >
-            Tab 1
-            </div>
-            <div
-            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            >
-            Tab 2
-            </div>
-            <div
+                <div
+                className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                >
+                Tab 1
+                </div>
+                <div
+                className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+                >
+                Tab 2
+                </div>
+                <div
             className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
             >
             Tab 3
             </div>
-        </div>
+            </div>
 
             <div className="content-tabs">
-                <div
-                className={toggleState === 1 ? "content  active-content first-content" : "content"}
-                >
-                <div>
-                    <label>Name</label>
-                    <input placeholder="Opara Linus Ahmed" />
-                </div>
-                <div>
-                    <label>Email Address *</label>
-                    <p>The Purchase will be sent to this address</p>
-                    <input placeholder="OparaLinuxAhmed@devmail.com" />
-                </div>
-                <div>
-                    <label>Address 1</label>
-                    <input placeholder="The address of the user goes here"/>
-                </div>
-                <div>
-                    <label>Address 2</label>
-                    <input placeholder="and here" />
-                </div>
-                <div className="address">
-                    <div className="lga">
-                        <label>Local Government</label>
-                        <input placeholder="Surulere" />
-                    </div>
-                    <div className="state">
-                        <label>State</label>
-                        <input placeholder="Lagos" />
-                    </div>
-                </div>
-                <div className="confirm">
-                    <button onClick={() => toggleTab(2)}>Next</button>
-                    <h3>Cancel payment</h3>
-                </div>
-            </div>
+
+                <FirstSection 
+                    onClick={() => toggleTab(2)}
+                    toggleState={toggleState}
+                />
 
                 <div
             className={toggleState === 2 ? "content  active-content content-2" : "content"}
