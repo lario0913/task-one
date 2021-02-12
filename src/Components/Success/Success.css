@@ -1,0 +1,48 @@
+.success-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .success-content .success-content-card{
+        padding-top: 40px;
+        height: 400px;
+        width: 40%;
+        box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+        background: #ffffff;
+        border-radius: 10px;
+    }
+        .success-content-card .check {
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+            padding: 10px;
+            background: #ffffff;
+            width: 55px;
+            border-radius: 70%;
+        }
+        .success-content-card .check p {
+            color: green;
+            font-size: 2.5em;
+            font-weight: bolder;
+        }
+        .success-content-card .transaction-details{
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 8px;
+        }
+            .transaction-details h3{
+                font-size: 2em;
+                color: #4E598C;
+                margin-bottom: 25px;
+            }
+            .transaction-details p{
+                font-size: 0.8em;
+                margin-bottom: 25px;
+            }
+            .transaction-details a {
+                color: rgb(206, 151, 69)
+            }

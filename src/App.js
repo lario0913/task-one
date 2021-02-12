@@ -1,7 +1,7 @@
 import "./App.css";
 import {Route} from 'react-router-dom'
-import Tabs from './Tabs';
-import Success from "./Success";
+import Tabs from './Components/Tabs/Tabs';
+import Success from "./Components/Success/Success";
 
 function App() {
 

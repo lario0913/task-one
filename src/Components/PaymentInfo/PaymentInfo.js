@@ -30,7 +30,6 @@ function PaymentInfo(props) {
             </section>
             
             <section className="confirm">
-                {/* <button><Link to="/success">Pay</Link></button> */}
                 <Link to="/success">Pay</Link>
                 <h3>Cancel payment</h3>
             </section>

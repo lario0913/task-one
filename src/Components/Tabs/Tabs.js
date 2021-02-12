@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "./App.css";
-import BillingInfo from "./Components/BillingInfo/BillingInfo";
-import PaymentInfo from "./Components/PaymentInfo/PaymentInfo";
-import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
+import "../../App.css";
+import BillingInfo from "../BillingInfo/BillingInfo";
+import PaymentInfo from "../PaymentInfo/PaymentInfo";
+import PersonalInfo from "../PersonalInfo/PersonalInfo";
+
 
 function Tabs() {
   const [nextTab, setNextTab] = useState("personal");
@@ -18,16 +19,19 @@ function Tabs() {
             <div className="block-tabs">
 
                 <div
-                className={nextTab === "personal" ? "tabs active-tabs" : "tabs"}
+                    onClick={() => toggleTab("personal")}
+                    className={nextTab === "personal" ? "tabs active-tabs" : "tabs"}
                 >
                     Personal Info
                 </div>
-                <div
-                className={nextTab === "billing" ? "tabs active-tabs" : "tabs"}
+                <div 
+                    onClick={() => toggleTab("billing")}
+                    className={nextTab === "billing" ? "tabs active-tabs" : "tabs"}
                 >
                     Billing Info
                 </div>
                 <div
+                    onClick={() => toggleTab("payment")}
                     className={nextTab === "payment" ? "tabs active-tabs" : "tabs"}
                 >
                     Confirm Payment
@@ -36,21 +40,16 @@ function Tabs() {
             </div>
 
             <div className="content-tabs">
-
                 <PersonalInfo 
                     onClick={() => toggleTab("billing")}
                     nextTab={nextTab}
                 />
-
                 <BillingInfo 
                     onClick={()=>toggleTab("payment")}
                     nextTab={nextTab}
                 />
-
-                <PaymentInfo 
-                    nextTab={nextTab}
+                <PaymentInfo nextTab={nextTab}
                 />
-
             </div>
         </div>
     
