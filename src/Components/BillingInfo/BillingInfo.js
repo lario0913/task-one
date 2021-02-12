@@ -10,7 +10,11 @@ function BillingInfo(props) {
             </div>
             <div>
                 <span><label>Card Type</label><p>*</p></span>
-                <input placeholder="Visa" />
+                <select name="card">
+                <option value="visa">Visa</option>
+                <option value="verve">Verve</option>
+                <option value="master-card">Master card</option>
+            </select>
             </div>
             <div className="card-details">
                 <div className="details">

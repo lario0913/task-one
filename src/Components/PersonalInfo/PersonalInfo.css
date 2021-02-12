@@ -65,6 +65,8 @@
 
     .second-content > div.card-details > div > input,
     .second-content > div > input,
+    .second-content > div > select,
+    .first-content > div.address > div > select,
     .first-content > div.address > div > input,
     .first-content > div > input {
       background: #FFFFFF;

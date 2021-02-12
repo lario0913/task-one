@@ -17,7 +17,6 @@ function Tabs() {
         <div className="container">
             <h1 className="heading">Complete your Purchase</h1>
             <div className="block-tabs">
-
                 <div
                     onClick={() => toggleTab("personal")}
                     className={nextTab === "personal" ? "tabs active-tabs" : "tabs"}
@@ -36,7 +35,6 @@ function Tabs() {
                 >
                     Confirm Payment
                 </div>
-            
             </div>
 
             <div className="content-tabs">

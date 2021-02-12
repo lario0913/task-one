@@ -28,9 +28,15 @@ function PersonalInfo(props) {
                 <label>Local Government</label>
                 <input placeholder="Surulere" />
             </div>
+            
             <div className="state">
                 <label>State</label>
-                <input placeholder="Lagos" />
+                <select name="state">
+                    <option value="Lagos">Lagos</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Kogi">Kogi</option>
+                </select>
             </div>
         </div>
         <div className="confirm">
