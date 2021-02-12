@@ -1,0 +1,88 @@
+.third-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 35px;
+    
+}
+
+    .third-content > .third-content-card {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 80px;
+        box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+        border-radius: 10px;
+        background: #ffffff;
+    }
+
+        .third-content > .third-content-card > .card-header {
+            background: #2F80ED;
+            color: #ffffff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 15px 10%;
+            justify-content: space-between;
+        }
+        .third-content > .third-content-card > .card-content{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .card-content .product{
+                border-bottom: 2px solid #817E9E;
+                margin-top: 60px;
+                padding-bottom: 40px;
+                color: #4E598C;
+                margin-bottom: 40px;
+            }
+                .card-content .product div{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+                .card-content .product div:nth-child(1){
+                    margin-bottom: 50px;
+                }
+            .card-content .total{
+                border: 2px solid #817E9E;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                padding: 20px 2.5%;
+            }
+    
+    .third-content .confirm{
+        margin-bottom: 100px;
+        justify-items: center;
+        align-items: center;
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+        .third-content .confirm a {
+            background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px 80px;
+            border: none;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        .third-content .confirm h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            color: #4E598C;
+        }
+
