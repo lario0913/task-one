@@ -16,21 +16,23 @@ function Tabs() {
         <div className="container">
             <h1 className="heading">Complete your Purchase</h1>
             <div className="block-tabs">
+
                 <div
                 className={nextTab === "personal" ? "tabs active-tabs" : "tabs"}
                 >
-                Personal Info
+                    Personal Info
                 </div>
                 <div
                 className={nextTab === "billing" ? "tabs active-tabs" : "tabs"}
                 >
-                Billing Info
+                    Billing Info
                 </div>
                 <div
                     className={nextTab === "payment" ? "tabs active-tabs" : "tabs"}
                 >
                     Confirm Payment
                 </div>
+            
             </div>
 
             <div className="content-tabs">

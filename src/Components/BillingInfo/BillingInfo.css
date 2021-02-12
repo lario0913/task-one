@@ -1,0 +1,12 @@
+.second-content > div.card-details > div.details{
+    width: 57%;
+  }
+.second-content > div.card-details > div.date{
+    width: 20%;
+}
+.second-content > div.card-details > div.cvv{
+    width: 13%;
+}
+.second-content > div > span{
+    margin-bottom: 20px;
+}
