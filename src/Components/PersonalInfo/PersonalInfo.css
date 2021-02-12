@@ -59,6 +59,7 @@
     .second-content > div.card-details > div > span,
     .second-content > div > span,
     .first-content > div.address > div > label,
+    .first-content > div > span,
     .first-content > div > label {
       margin-bottom: 20px;
     }

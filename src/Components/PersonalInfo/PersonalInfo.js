@@ -11,7 +11,7 @@ function PersonalInfo(props) {
             <input placeholder="Opara Linus Ahmed" />
         </div>
         <div>
-            <label>Email Address *</label>
+        <span><label>Email Address</label><p>*</p></span>
             <p>The Purchase will be sent to this address</p>
             <input placeholder="OparaLinuxAhmed@devmail.com" />
         </div>
