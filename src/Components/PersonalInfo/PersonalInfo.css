@@ -1,0 +1,73 @@
+.first-content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+  .first-content > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+
+  .first-content > div.confirm{
+    width: 70%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+    .first-content > div.confirm > button {
+      background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 80px;
+      border: none;
+      color: #FFFFFF;
+    }
+    .first-content > div.confirm > h3{
+      font-family: Product Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #4E598C;
+    }
+
+  .first-content > div.address,
+  .first-content > div.confirm{
+    flex-direction: row;
+  }
+
+    .first-content > div.address > div{
+      display: flex;
+      flex-direction: column;
+    }
+      .first-content > div.address > div.lga{
+        width: 60%;
+      }
+      .first-content > div.address > div.state{
+        width: 30%;
+      }
+    .first-content > div.address > div > label,
+    .first-content > div > label {
+      margin-bottom: 15px;
+    }
+    .first-content > div.address > div > input,
+    .first-content > div > input {
+      background: #FFFFFF;
+      border: 1px solid #4E598C;
+      box-sizing: border-box;
+      border-radius: 12px;
+      height: 50px;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .first-content > div > p{
+      margin-bottom: 15px;
+      color: #817E9E;
+      font-size: 17px;
+    }

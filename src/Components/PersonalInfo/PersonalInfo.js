@@ -1,10 +1,10 @@
 import React from 'react'
-import './FirstSection.css'
+import './PersonalInfo.css'
 
-function FirstSection(props) {
+function PersonalInfo(props) {
     return (
         <div
-        className={props.toggleState === 1 ? "content  active-content first-content" : "content"}
+        className={props.nextTab === "personal" ? "content  active-content first-content" : "content"}
         >
         <div>
             <label>Name</label>
@@ -41,4 +41,4 @@ function FirstSection(props) {
     )
 }
 
-export default FirstSection
+export default PersonalInfo
